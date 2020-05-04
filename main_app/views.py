@@ -27,7 +27,7 @@ def signup(request):
       login(request, user)
       return redirect('about')
     else:
-      error_message = 'Invalid sign up - try again'
+      error_message = 'Invalid sign up - try again!'
   # A bad POST or a GET request, so render signup.html with an empty form
   form = UserCreationForm()
   context = {'form': form, 'error_message': error_message}
