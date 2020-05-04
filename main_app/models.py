@@ -11,17 +11,12 @@ MOODS = (
     ('E', 'Romantic'),
     ('F', 'Mysterious')
 )
-
 class Song(models.Model):
-    mood = models.CharField(
-        max_length=1,
-        choices=MOODS,
-        default=MOODS[0][0]
-    )
     name = models.CharField(max_length=100)
     band = models.CharField(max_length=100)
-    
+    mood = models.CharField(max_length=1,choices=MOODS,default=MOODS[0][0])
+    posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
-	# def __str__(self):
-    #     return f"{self.name} on {self.band}"
+    def __str__(self):
+        return f"{self.name} by {self.band}"
