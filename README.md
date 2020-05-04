@@ -6,4 +6,5 @@
 
 ## Technologies used
 Html/CSS/Javascript
-
+Django webframework
+Postgresql
