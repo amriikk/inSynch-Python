@@ -12,8 +12,12 @@
             <p>MOOD: {{ song.mood }}</p>
           
             <p>User: {{ song.posted_by }}</p>
+            {% if user == song.posted_by %}
             <a href="{% url 'songs_update' song.id %}">Update</a>
             <a href="{% url 'songs_delete' song.id %}">Delete</a>
+            {% else %}
+            <p>It worked</p>
+            {% endif %}
         </div>
     </div>
   
