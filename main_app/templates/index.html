@@ -12,7 +12,7 @@
             <p>MOOD: {{ song.mood }}</p>
           
             <p>User: {{ song.posted_by }}</p>
-        
+            <a href="{% url 'songs_update' song.id %}">Update</a>
         </div>
     </div>
   
