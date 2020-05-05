@@ -22,4 +22,4 @@ class Song(models.Model):
         return f"{self.name} by {self.band}"
 
     def get_absolute_url(self):
-        return reverse('home')
+        return reverse('mood', kwargs={'mood':self.mood})
