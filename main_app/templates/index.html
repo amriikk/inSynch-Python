@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ mood }} List</h1>
+
+{% for song in songs %}
+  
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">{{ song.name }}</span>
+            <p>BAND: {{ song.band }}</p>
+            <p>MOOD: {{ song.mood }}</p>
+          
+            <p>User: {{ song.posted_by }}</p>
+            <a href="{% url 'songs_update' song.id %}">Update</a>
+            <a href="{% url 'songs_delete' song.id %}">Delete</a>
+        </div>
+    </div>
+  
+{% endfor %}
+
+{% endblock %}

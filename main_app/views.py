@@ -2,19 +2,10 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Song
 
 
-
-
-class SongCreate(CreateView):
-  model = Song
-  fields = ['name', 'band', 'mood']
-
-  def form_valid(self, form):
-    form.instance.posted_by = self.request.user
-    return super().form_valid(form)
 
 # Define the home view
 def home(request):
@@ -23,6 +14,30 @@ def home(request):
 @login_required
 def about(request):
   return render(request, 'about.html')
+
+class SongCreate(CreateView):
+  model = Song
+  fields = ['name', 'band', 'mood']
+  
+  
+  def form_valid(self, form):
+    form.instance.posted_by = self.request.user
+    # return super().form_valid(form)
+    return redirect('mood', mood=form.instance.mood)
+
+def songs_mood(request, mood):
+  songs = Song.objects.filter(mood=mood)
+  print(songs)
+  return render(request, 'index.html', { 'songs': songs , 'mood': mood })
+
+class SongUpdate(UpdateView):
+  model = Song
+  fields = ['name', 'band', 'mood']
+
+class SongDelete(DeleteView):
+  model = Song
+  success_url = '/'
+
 
 def accounts(request):
   return render(request, 'registration/login.html')
