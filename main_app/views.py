@@ -2,6 +2,19 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import CreateView
+from .models import Song
+
+
+
+
+class SongCreate(CreateView):
+  model = Song
+  fields = ['name', 'band', 'mood']
+
+  def form_valid(self, form):
+    form.instance.posted_by = self.request.user
+    return super().form_valid(form)
 
 # Define the home view
 def home(request):
