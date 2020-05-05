@@ -7,15 +7,6 @@ from .models import Song
 
 
 
-
-class SongCreate(CreateView):
-  model = Song
-  fields = ['name', 'band', 'mood']
-
-  def form_valid(self, form):
-    form.instance.posted_by = self.request.user
-    return super().form_valid(form)
-
 # Define the home view
 def home(request):
   return render(request, 'home.html')
@@ -23,6 +14,21 @@ def home(request):
 @login_required
 def about(request):
   return render(request, 'about.html')
+
+class SongCreate(CreateView):
+  model = Song
+  fields = ['name', 'band', 'mood']
+  
+  
+  def form_valid(self, form):
+    form.instance.posted_by = self.request.user
+    # return super().form_valid(form)
+    return redirect('mood', mood=form.instance.mood)
+
+def songs_mood(request, mood):
+  songs = Song.objects.filter(mood=mood)
+  print(songs)
+  return render(request, 'index.html', { 'songs': songs , 'mood': mood })
 
 def accounts(request):
   return render(request, 'registration/login.html')
