@@ -22,8 +22,8 @@ class SongCreate(CreateView):
   
   def form_valid(self, form):
     form.instance.posted_by = self.request.user
-    # return super().form_valid(form)
-    return redirect('mood', mood=form.instance.mood)
+    # return redirect('mood', mood=form.instance.mood)
+    return super().form_valid(form)
 
 def songs_mood(request, mood):
   songs = Song.objects.filter(mood=mood)
