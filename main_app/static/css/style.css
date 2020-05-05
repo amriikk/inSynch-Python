@@ -1,10 +1,9 @@
 body {
     font-family: 'Jost', sans-serif;
-    /* background: url('https://i.imgur.com/BVhCmHO.jpg'); */
+    background: url('https://i.imgur.com/BVhCmHO.jpg');
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-size: x-large;
   }
   
 main {
