@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Song
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
@@ -11,14 +12,13 @@ from .models import Song
 def home(request):
   return render(request, 'home.html')
 
-@login_required
+
 def about(request):
   return render(request, 'about.html')
 
-class SongCreate(CreateView):
+class SongCreate(LoginRequiredMixin, CreateView):
   model = Song
   fields = ['name', 'band', 'mood']
-  
   
   def form_valid(self, form):
     form.instance.posted_by = self.request.user
@@ -30,11 +30,11 @@ def songs_mood(request, mood):
   print(songs)
   return render(request, 'index.html', { 'songs': songs , 'mood': mood })
 
-class SongUpdate(UpdateView):
+class SongUpdate(LoginRequiredMixin, UpdateView):
   model = Song
   fields = ['name', 'band', 'mood']
 
-class SongDelete(DeleteView):
+class SongDelete(LoginRequiredMixin, DeleteView):
   model = Song
   success_url = '/'
 
@@ -53,7 +53,7 @@ def signup(request):
       user = form.save()
       # This is how we log a user in via code
       login(request, user)
-      return redirect('about')
+      return redirect('home')
     else:
       error_message = 'Invalid sign up - try again!'
   # A bad POST or a GET request, so render signup.html with an empty form
