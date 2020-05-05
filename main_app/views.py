@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Song
 
 
@@ -33,6 +33,10 @@ def songs_mood(request, mood):
 class SongUpdate(UpdateView):
   model = Song
   fields = ['name', 'band', 'mood']
+
+class SongDelete(DeleteView):
+  model = Song
+  success_url = '/'
 
 
 def accounts(request):
