@@ -14,6 +14,10 @@ a {
     color: darkblue;
 }
 
+.material-icons.md-48 {
+    font-size: 6rem;
+}
+
 form {
     background-color: aliceblue;
     border-radius: 6px;
