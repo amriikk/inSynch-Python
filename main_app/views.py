@@ -6,12 +6,10 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Song
 from .spotify import SpotifyAPI
 from django.contrib.auth.mixins import LoginRequiredMixin
-import requests
 
 
 # Define the home view
 def home(request):
-  print(SpotifyAPI.get_token_data())
   return render(request, 'home.html')
 
 
