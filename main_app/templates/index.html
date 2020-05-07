@@ -21,27 +21,24 @@
         <div>
             <div class="card-content">
                 <h7>Please click agree or disagree based on if you think {{ song.name }} should be on this list:</h7>
-                <div>
-
-                    <p>
-                        {% if user.is_authenticated %}
-                            <a href="{% url 'vote_agree' song.id %}">agree</a>
-                            {{ song.agree }}
-                        {% else %}
-                            agree
-                            {{ song.agree }}
-                        {% endif %}
-                    </p>
-                    <p>
-                        {% if user.is_authenticated %}
-                            <a href="{% url 'vote_disagree' song.id %}">disagree</a>
-                            {{ song.disagree }}
-                        {% else %}
-                            disagree
-                            {{ song.disagree }}
-                        {% endif %}
-                    </p>
-                </div>
+                <p>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'vote_agree' song.id %}">agree</a>
+                        {{ song.agree }}
+                    {% else %}
+                        agree
+                        {{ song.agree }}
+                    {% endif %}
+                </p>
+                <p>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'vote_disagree' song.id %}">disagree</a>
+                        {{ song.disagree }}
+                    {% else %}
+                        disagree
+                        {{ song.disagree }}
+                    {% endif %}
+                </p>
             
             </div>
         </div>
