@@ -19,6 +19,13 @@
             <p>It worked</p>
             {% endif %}
         </div>
+
+        <div>
+            <p><a href="{% url 'vote_agree' song.id %}">agree</a>{{ song.agree }}</p>
+            <p><a href="{% url 'vote_disagree' song.id %}">disagree</a>{{ song.disagree }}</p>
+            
+            
+        </div>
     </div>
   
 {% endfor %}
