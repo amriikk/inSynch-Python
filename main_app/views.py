@@ -27,6 +27,22 @@ class SongCreate(LoginRequiredMixin, CreateView):
     # return redirect('mood', mood=form.instance.mood)
     return super().form_valid(form)
 
+
+def vote_agree(request, song_id):
+  song = Song.objects.get(id=song_id)
+  song.agree += 1
+  song.save()
+  #return redirect('mood', {'mood': song.mood})
+  songs = Song.objects.filter(mood=song.mood)
+  return render(request, 'index.html', { 'songs': songs , 'mood': song.mood })
+
+def vote_disagree(request, song_id):
+  song = Song.objects.get(id=song_id)
+  song.disagree += 1
+  song.save()
+  songs = Song.objects.filter(mood=song.mood)
+  return render(request, 'index.html', { 'songs': songs , 'mood': song.mood })
+
 def songs_mood(request, mood):
   songs = Song.objects.filter(mood=mood)
   print(songs)

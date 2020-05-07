@@ -11,4 +11,6 @@ urlpatterns = [
     path('songs/create/', views.SongCreate.as_view(), name='songs_create'),
     path('<str:pk>/update/', views.SongUpdate.as_view(), name='songs_update'),
     path('<str:pk>/delete/', views.SongDelete.as_view(), name='songs_delete'),
+    path('<str:song_id>/voteagree/', views.vote_agree, name='vote_agree'),
+    path('<str:song_id>/votedisagree/', views.vote_disagree, name='vote_disagree'),
 ]
