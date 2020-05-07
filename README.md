@@ -2,11 +2,11 @@
 
 ### SEI-DT-71
 
-| :large_blue_circle: John Trujillo | :red_circle: Amanda Buch   | :black_circle: Jay Reginaldo |
+| :large_blue_circle: John Trujillo | :black_circle: Jay Reginaldo | :red_circle: Amanda Buch |
 | ------------- |:-------------:| -----:|
-| GitHub Manager    | SCRUM Master | Designer |
-| API Manager     | Designer      |   Documentor |
-| Documentor |       |  Database Manager   |
+| GitHub Manager| Designer | Database Manager |
+| API Manager   | Documentor  |   SCRUM Master |
+| Documentor |  |    |
 
 ## Introduction
 **inSynch** is an application that enables users to get a list of songs depending on their current mood.
