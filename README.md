@@ -1,15 +1,19 @@
 # inSynch
 
-## John Trujillo
-## Amanda Buch
-## Jay Reginaldo
 ### SEI-DT-71
+
+#### John Trujillo |
+#### Amanda Buch |
+#### Jay Reginaldo |
+
 
 ## Introduction
 **inSynch** is an application that enables users to get a list of songs depending on their current mood.
 
 
 ## Getting Started:
+
+#### Pick a playlist to match your mood!
 
 ![Link to Heroku](https://github.com/amriikk/inSynch.git/) :trollface:
 
@@ -21,7 +25,7 @@
 ![App Screenshot 2](https://github.com/amriikk/#/)
 
 
-#### Pick a playlist to match your mood!
+
 
 ## Technology Utilized: 
 
