@@ -4,12 +4,14 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Song
+from .spotify import SpotifyAPI
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
 # Define the home view
 def home(request):
+  # print(SpotifyAPI.get_token_data(self)) include self in params above
   return render(request, 'home.html')
 
 
