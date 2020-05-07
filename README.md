@@ -1,11 +1,12 @@
-# inSynch
+# :notes: inSynch :headphones: 
 
 ### SEI-DT-71
 
-#### John Trujillo |
-#### Amanda Buch |
-#### Jay Reginaldo |
-
+| :large_blue_circle: John Trujillo | :black_circle: Jay Reginaldo | :red_circle: Amanda Buch |
+| ------------- |:-------------:| -----:|
+| GitHub Manager| Designer | Database Manager |
+| API Manager   | Documentor  |SCRUM Master |
+| Documentor |  |    |
 
 ## Introduction
 **inSynch** is an application that enables users to get a list of songs depending on their current mood.
@@ -20,6 +21,8 @@
 [Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch)
 
 [Wireframe](https://github.com/amriikk/inSynch.git/)
+
+[Deck](https://docs.google.com/presentation/d/1tw0Nbhoj-K7TOq6NjJdoOy5LAKwZjxRUAOsluOhLUaE/edit#slide=id.gcb9a0b074_1_0/)
 
 
 ![App Screenshot 2](https://github.com/amriikk/#/)
