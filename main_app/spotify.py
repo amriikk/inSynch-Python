@@ -1,7 +1,7 @@
 import base64
 import datetime
 from urllib.parse import urlencode
-import pip._vendor.requests
+import requests
 
 class SpotifyAPI(object):
     access_token = None
@@ -35,7 +35,8 @@ class SpotifyAPI(object):
             "Authorization": f"Basic {client_creds_b64}"
         }
     
-    def get_token_data(self):
+    def get_token_data():
+        print('getting token data')
         return {
             "grant_type": "client_credentials"
         }
