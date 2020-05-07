@@ -4,8 +4,8 @@
 
 | :large_blue_circle: John Trujillo | :black_circle: Jay Reginaldo | :red_circle: Amanda Buch |
 | ------------- |:-------------:| -----:|
-| GitHub Manager| Designer | SCRUM Master |
-| API Manager   | Documentor  | Database Manager |
+| GitHub Manager| Designer | Database Manager |
+| API Manager   | Documentor  |SCRUM Master |
 | Documentor |  |    |
 
 ## Introduction
