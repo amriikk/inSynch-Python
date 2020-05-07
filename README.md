@@ -65,20 +65,23 @@ Are you ever in a mood and want to listen to music that goes along with how you 
 
 :thought_balloon: Establish GitHub work flow and roles
 
-
-## IceBox Features:
-
-- [ ] User can view album artwork :busts_in_silhouette:
-
-- [ ] Add ability to play a song :sound:
-
-- [ ] Add more animation especially on the buttons 
-
-- [ ] Option for a wider range of moods :white_square_button:
+## In Development:
 
 - [x] Consuming a music library API :heavy_check_mark:
 
 - [x] Add voting functionality for users :heavy_check_mark:
 
 - [x] A user can sign up on the page :heavy_check_mark:
+
+## Future Features:
+
+- [ ] User can view album artwork :busts_in_silhouette:
+
+- [ ] Add ability to play a song :sound:
+
+- [ ] Add more animation especially on the buttons :cool:
+
+- [ ] Option for a wider range of moods :white_square_button:
+
+
 
