@@ -22,7 +22,7 @@ class Song(models.Model):
     posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
     agree = models.IntegerField(default=0)
     disagree = models.IntegerField(default=0)
-    # user_id = [ 23, 45]
+    
 
     def __str__(self):
         return f"{self.name} by {self.band}"
@@ -30,13 +30,3 @@ class Song(models.Model):
     def get_absolute_url(self):
         return reverse('home')
 
-# class Vote(models.Model):
-#     song = models.ForeignKey(Song, on_delete=models.CASCADE)
-#     CHOICES =(
-#         ('A', 'Agree'),
-#         ('D', 'Disagree')
-#     )
-#     choice = models.CharField(max_length=200, choices=CHOICES, default=[0][0])
-# user_id = 23
-
-#     def __str__(self)
