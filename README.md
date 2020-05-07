@@ -15,11 +15,11 @@
 
 #### Pick a playlist to match your mood!
 
-![Link to Heroku](https://github.com/amriikk/inSynch.git/) :trollface:
+[Link to Heroku](https://github.com/amriikk/inSynch.git/) :trollface:
 
-![Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch)
+[Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch)
 
-![Wireframe](https://github.com/amriikk/inSynch.git/)
+[Wireframe](https://github.com/amriikk/inSynch.git/)
 
 
 ![App Screenshot 2](https://github.com/amriikk/#/)
@@ -27,7 +27,7 @@
 
 
 
-## Technology Utilized: 
+## Technology + Techniques: 
 
 ###### :small_blue_diamond: HTML5
 
@@ -74,6 +74,8 @@
 - [ ] Add more animation especially on the buttons 
 
 - [ ] Option for a wider range of moods :white_square_button:
+
+- [x] Consuming a music library API :heavy_check_mark:
 
 - [x] Add voting functionality for users :heavy_check_mark:
 
