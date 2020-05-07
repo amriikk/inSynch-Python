@@ -9,12 +9,10 @@
 | Documentor |  |    |
 
 ## Introduction
-**inSynch** is an application that enables users to get a list of songs depending on their current mood.
+Are you ever in a mood and want to listen to music that goes along with how you feel? inSynch provides the opportunity to view playlists that go along with different moods. In addition, it allows you as a user to log in and add songs to these playlists based on what mood each of those songs puts you in.
 
 
 ## Getting Started:
-
-#### Pick a playlist to match your mood!
 
 [Link to Heroku](https://github.com/amriikk/inSynch.git/) :trollface:
 
