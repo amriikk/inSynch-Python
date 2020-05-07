@@ -21,6 +21,7 @@
         </div>
 
         <div>
+            
             <p>
                 {% if user.is_authenticated %}
                     <a href="{% url 'vote_agree' song.id %}">agree</a>
