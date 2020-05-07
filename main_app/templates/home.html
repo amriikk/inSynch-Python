@@ -2,36 +2,38 @@
 {% block content %}
 
 <div>
-<h1>Welcome to inSynch</h1>
-<hr />
-<p>Please select a mood that you want to listen to, it will return music that goes along with that mood. 
-    if you'd like to add songs the playlists please <a href="{% url 'signup' %}">Sign-Up</a> or <a href="{% url 'login' %}">Log In</a> </p>
-<br>
-<br>
+    <h1>Welcome to inSynch</h1>
+    <hr />
+    <p>
+        Please select a mood. It will take you to a list of songs based on the mood you selected. In order to add songs to a playlist or be able to agree or disagree with a song, you must first <a href="{% url 'signup' %}">Sign-Up</a> for an account or <a href="{% url 'login' %}">Log In</a>to your existing account.
+        
+    </p>
+    <br>
+    <br>
 </div>
 <div class="row">
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'angry' %}" class="btn-floating btn-large waves-effect waves-light red darken-1"><i class="material-icons">ang</i></a>
-        <div><a href="{% url 'mood' 'angry' %}">&nbsp Angry</a></div>
+        <a href="{% url 'mood' 'angry' %}" class="btn-floating btn-large waves-effect waves-light red darken-1"><i class="material-icons"></i></a>
+        <div><a href="{% url 'mood' 'angry' %}">&nbsp angry</a></div>
     </div>
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'cheerful' %}" class="btn-floating btn-large waves-effect waves-light yellow darken-2"><i class="material-icons">che</i></a>
+        <a href="{% url 'mood' 'cheerful' %}" class="btn-floating btn-large waves-effect waves-light yellow darken-2"><i class="material-icons"></i></a>
         <div><a href="{% url 'mood' 'cheerful' %}">&nbsp cheerful</a></div>
     </div>
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'melancholy' %}" class="btn-floating btn-large waves-effect waves-light purple darken-2"><i class="material-icons">mel</i></a>
+        <a href="{% url 'mood' 'melancholy' %}" class="btn-floating btn-large waves-effect waves-light purple darken-2"><i class="material-icons"></i></a>
         <div><a href="{% url 'mood' 'melancholy' %}">melancholy</a></div>
     </div>
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'calm' %}" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons">calm</i></a>
+        <a href="{% url 'mood' 'calm' %}" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons"></i></a>
         <div><a href="{% url 'mood' 'calm' %}">&nbsp&nbsp calm</a></div>
     </div>
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'romantic' %}" class="btn-floating btn-large waves-effect waves-light pink lighten-1"><i class="material-icons">rom</i></a>
+        <a href="{% url 'mood' 'romantic' %}" class="btn-floating btn-large waves-effect waves-light pink lighten-1"><i class="material-icons"></i></a>
         <div><a href="{% url 'mood' 'romantic' %}">&nbsp romantic</a></div>
     </div>
     <div class="col s12 m4 l2">
-        <a href="{% url 'mood' 'mysterious' %}" class="btn-floating btn-large waves-effect waves-light orange darken-2"><i class="material-icons">mys</i></a>
+        <a href="{% url 'mood' 'mysterious' %}" class="btn-floating btn-large waves-effect waves-light orange darken-2"><i class="material-icons"></i></a>
         <div><a href="{% url 'mood' 'mysterious' %}">mysterious</a></div>
     </div>
 </div>
