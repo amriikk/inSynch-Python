@@ -1,6 +1,13 @@
-# :headphones: inSynch /play flawless
+# inSynch :headphones: 
 
 ### SEI-DT-71
+
+| John Trujillo        | Amanda Buch      | Jay Reginaldo |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 #### :large_blue_circle: John Trujillo |
 #### :red_circle: Amanda Buch |
