@@ -1,10 +1,10 @@
-# inSynch
+# :headphones: inSynch /play flawless
 
 ### SEI-DT-71
 
-#### John Trujillo |
-#### Amanda Buch |
-#### Jay Reginaldo |
+#### :large_blue_circle: John Trujillo |
+#### :red_circle: Amanda Buch |
+#### :black_circle: Jay Reginaldo |
 
 
 ## Introduction
@@ -20,6 +20,8 @@
 [Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch)
 
 [Wireframe](https://github.com/amriikk/inSynch.git/)
+
+[Deck](https://docs.google.com/presentation/d/1tw0Nbhoj-K7TOq6NjJdoOy5LAKwZjxRUAOsluOhLUaE/edit#slide=id.gcb9a0b074_1_0/)
 
 
 ![App Screenshot 2](https://github.com/amriikk/#/)
