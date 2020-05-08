@@ -24,7 +24,7 @@ Are you ever in a mood and want to listen to music that goes along with how you 
 [Deck](https://docs.google.com/presentation/d/1tw0Nbhoj-K7TOq6NjJdoOy5LAKwZjxRUAOsluOhLUaE/edit#slide=id.gcb9a0b074_1_0/)
 
 
-![App Screenshot 2](https://github.com/amriikk/#/)
+![App Screenshot 2](https://i.imgur.com/FbRw9bO.png)
 
 
 
