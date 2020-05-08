@@ -1,6 +1,6 @@
 body {
     font-family: 'Jost', sans-serif;
-    background: url('https://i.imgur.com/BVhCmHO.jpg');
+    background: url('https://i.imgur.com/giRw928.jpg') fixed no-repeat center;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -10,8 +10,21 @@ main {
     flex: 1 0 auto;
 }
 
+h1 {
+    color: lightgrey;
+}
+
+h2 {
+    color: lightgrey;
+}
+
+p {
+    color: lightgray;
+    font-size: large;
+}
+
 a {
-    color: darkblue;
+    color: cornflowerblue;
 }
 
 .material-icons.md-48 {
@@ -19,7 +32,7 @@ a {
 }
 
 form {
-    background-color: aliceblue;
+    background-color: rgb(84, 110, 122);
     border-radius: 6px;
 }
 
