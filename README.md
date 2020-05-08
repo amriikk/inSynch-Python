@@ -8,13 +8,14 @@
 | API Manager   | Documentor  |SCRUM Master |
 | Documentor |  |    |
 
+
 ## Introduction
 Are you ever in a mood and want to listen to music that goes along with how you feel? inSynch provides the opportunity to view playlists that go along with different moods. In addition, it allows you as a user to log in and add songs to these playlists based on what mood each of those songs puts you in.
 
 
 ## Getting Started:
 
-[Link to Heroku](https://github.com/amriikk/inSynch.git/) :trollface:
+[Link to Heroku](https://insynchsongs.herokuapp.com/) :trollface:
 
 [Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch)
 
@@ -24,7 +25,6 @@ Are you ever in a mood and want to listen to music that goes along with how you 
 
 
 ![App Screenshot 2](https://github.com/amriikk/#/)
-
 
 
 
