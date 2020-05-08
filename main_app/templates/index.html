@@ -6,7 +6,7 @@
 {% for song in songs %}
   
     <div class="card">
-        <div class="card-content">
+        <div class="card-content blue-grey darken-3">
             <span class="card-title">Song Title: {{ song.name }}</span>
             <p>Band: {{ song.band }}</p>
             <p>User: {{ song.posted_by }}</p>
@@ -14,12 +14,12 @@
             <a href="{% url 'songs_update' song.id %}">Update</a>
             <a href="{% url 'songs_delete' song.id %}">Delete</a>
             {% else %}
-            
+
             {% endif %}
         </div>
-        <hr>
+        
         <div>
-            <div class="card-content">
+            <div class="card-content blue-grey darken-1">
                 <h7>Please click agree or disagree based on if you think {{ song.name }} should be on this list:</h7>
                 <p>
                     {% if user.is_authenticated %}
