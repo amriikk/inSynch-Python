@@ -16,7 +16,7 @@ Are you ever in a mood and want to listen to music that goes along with how you 
 ## Getting Started:
 
 | [Link to Heroku](https://insynchsongs.herokuapp.com/) :trollface: | [Trello Boards](https://trello.com/b/tYNSacSN/sei-project-3-synch) | [Wireframe](https://github.com/amriikk/inSynch.git/) | [Deck](https://docs.google.com/presentation/d/1tw0Nbhoj-K7TOq6NjJdoOy5LAKwZjxRUAOsluOhLUaE/edit#slide=id.gcb9a0b074_1_0/) |
-
+| ------------- |:-------------:| -----:|-----:|
 
 ![App Screenshot 2](https://i.imgur.com/FbRw9bO.png)
 
