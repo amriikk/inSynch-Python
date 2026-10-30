@@ -5,7 +5,7 @@ chardet==3.0.4
 distlib==0.3.0
 Django==3.1.14
 django-environ==0.4.5
-filelock==3.0.12
+filelock==4.2.1
 idna==2.9
 psycopg2-binary==2.8.5
 pytz==2020.1
